@@ -13,8 +13,9 @@ public class StockService {
         this.stockRepository = stockRepository;
     }
 
-    @Transactional
-    public void decrease(Long id, Long quantity) {
+    // synchronized라는 키워드를 함수의 선언부에 붙여주면 한개의 스레드만 접근할 수 있도록 해준다.
+//    @Transactional
+    public synchronized void decrease(Long id, Long quantity) {
         // get stock
         Stock stock = stockRepository.findById(id).orElseThrow();
         // 재고 감소
