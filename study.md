@@ -10,3 +10,7 @@ https://dc7303.github.io/docker/2019/11/24/dockerInstallForMac/
 따라서 서버가 여러대인 경우에는 데이터 접근이 여러곳에서 발생된다.
 -> 거의 사용되지 않는다.
 
+### 3. Database 이용해보기
+#### 3-1. Pessimistic Lock 활용해보기
+#### 3-2. Optimistic Lock 활용해보기
+#### 3-3. Named Lock 활용해보기
